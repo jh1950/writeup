@@ -2,11 +2,12 @@
 
 ### 문제
 ![Programming 4](/img/programming-4-0.png)  
-소수 = 약수가 1과 자기 자신인 수
+소수 = 약수가 1과 자기 자신밖에 없는 수
 
 ### 풀이
 코드 작성  
-```#!/usr/bin/env python3
+```python
+#!/usr/bin/env python3
 
 def f_cus(i):
     for j in range(2, int(i**1/2)+1):

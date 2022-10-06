@@ -22,10 +22,10 @@
 ![Search lfi_flag.txt](/img/lfiv2-4.png)  
 `flag`와 `home`이 필터링 되었다고 한다.
 
-테스트를 위해 1flag.php로 수정해보자.  
+테스트를 위해 1flag.php로 해보자.  
 ![Search 1flag.php](/img/lfiv2-5.png)  
 flag 문자열은 필터링 됐지만, 1.php의 파일 내용이 불러와진다.
 
-그렇다는 것은 `flag`와 `home` 문자열을 공백으로 치환된다는 뜻이니
+그렇다는 것은 필터링된 문자열은 공백으로 바뀌었다는 뜻이니
 ![Search flflagag.php](/img/lfiv2-6.png)  
 `/hohomeme/2ndctf/lfi_flflagag.txt`로 수정하면 플래그를 얻을 수 있다.

